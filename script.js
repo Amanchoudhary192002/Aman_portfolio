@@ -33,7 +33,7 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
-    
+
     // Owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
 /* typing animation*/
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed(".typing3", {
         strings: ["Cloud (AWS, Azure & GCP )", "Technical Support", "Web Development"],
         typeSpeed: 50,
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed(".typing2", {
         strings: ["Cloud (AWS, Azure & GCP )", "Technical Support", "Web Development"],
         typeSpeed: 50,
@@ -107,29 +107,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/*Break line for skills animation in about section title*/ 
+/*Break line for skills animation in about section title*/
 
-  // Function to check if the screen is small (mobile device)
-  function isMobile() {
+// Function to check if the screen is small (mobile device)
+function isMobile() {
     return window.innerWidth <= 768; // Adjust the breakpoint as needed
-  }
+}
 
-  // Add <br> tag only for mobile devices
-  const textDiv = document.querySelector('.text');
-  const typing3Element = document.querySelector('.typing3');
+// Add <br> tag only for mobile devices
+const textDiv = document.querySelector('.text');
+const typing3Element = document.querySelector('.typing3');
 
-  // Example content for .typing3
-  typing3Element.textContent = '';
+// Example content for .typing3
+typing3Element.textContent = '';
 
-  // Add <br> if the screen is small
-  if (isMobile()) {
+// Add <br> if the screen is small
+if (isMobile()) {
     const brElement = document.createElement('br');
     textDiv.insertBefore(brElement, typing3Element);
-  }
+}
 
-  // chatbot animation
+// chatbot animation
 
-  // Array of random statements
+// Array of random statements
 const randomStatements = [
     "Great choice! We are preparing everything for you. Redirecting in a moment...",
     "Awesome! Just a second while we get things ready for you...",
@@ -161,7 +161,7 @@ function startConversation() {
                 <span class="bot-emoji">🤖</span>
             </p>
         </div>`;
-    typeMessage("Hi there! Welcome to my portfolio.\n\nWhat would you like to explore?", function() {
+    typeMessage("Hi there! Welcome to my portfolio.\n\nWhat would you like to explore?", function () {
         setTimeout(() => {
             chatWindow.innerHTML += `
                 <div class="options-container">
@@ -200,7 +200,7 @@ function redirect(url) {
         </div>`;
     // Select a random statement
     const randomStatement = randomStatements[Math.floor(Math.random() * randomStatements.length)];
-    typeMessage(randomStatement, function() {
+    typeMessage(randomStatement, function () {
         setTimeout(() => { window.location.href = url; }, 2000);
     });
 }

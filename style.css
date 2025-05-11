@@ -249,6 +249,7 @@ section .title::after {
 .about .about-content .right .text span {
     color: crimson;
 }
+
 .about .title::after {
     content: "who i am";
 }
@@ -275,7 +276,8 @@ section .title::after {
 
 .about .about-content .right {
     width: 55%;
-    padding-left: 20px; /* Add padding to align content properly */
+    padding-left: 20px;
+    /* Add padding to align content properly */
 }
 
 .about .about-content .right .text {
@@ -288,7 +290,8 @@ section .title::after {
     text-align: justify;
     font-size: 16px;
     line-height: 1.6;
-    margin-left: 0; /* Remove margin-left for proper alignment */
+    margin-left: 0;
+    /* Remove margin-left for proper alignment */
 }
 
 .about .about-content .right a {
@@ -311,6 +314,7 @@ section .title::after {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
+
     .about .about-content .left,
     .about .about-content .right {
         width: 100%;
@@ -342,11 +346,13 @@ section .title::after {
 /* Media Query for Big Screens */
 @media (min-width: 769px) {
     .about .about-content .right {
-        padding-left: 50px; /* Add padding to align content properly */
+        padding-left: 50px;
+        /* Add padding to align content properly */
     }
 
     .about .about-content .right p {
-        margin-left: 0; /* Ensure no extra margin on big screens */
+        margin-left: 0;
+        /* Ensure no extra margin on big screens */
     }
 }
 
@@ -438,6 +444,7 @@ section .title::after {
     top: 0;
     background: crimson;
 }
+
 /* Skill Level Styling */
 .skill-level {
     font-weight: 600;
@@ -448,7 +455,8 @@ section .title::after {
 .stars {
     display: inline-block;
     position: absolute;
-    top: -20px; /* Adjust as needed */
+    top: -20px;
+    /* Adjust as needed */
     left: 0;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -479,39 +487,48 @@ section .title::after {
 
 /* Replace percentage-based widths with skill levels */
 .skills-content .right .html::before {
-    width: 85%; /* Advanced */
+    width: 85%;
+    /* Advanced */
 }
 
 .skills-content .right .css::before {
-    width: 80%; /* Advanced */
+    width: 80%;
+    /* Advanced */
 }
 
 .skills-content .right .js::before {
-    width: 82%; /* Advanced */
+    width: 82%;
+    /* Advanced */
 }
 
 .skills-content .right .php::before {
-    width: 60%; /* Intermediate */
+    width: 60%;
+    /* Intermediate */
 }
 
 .skills-content .right .mysql::before {
-    width: 60%; /* Intermediate */
+    width: 60%;
+    /* Intermediate */
 }
 
 .skills-content .right .java::before {
-    width: 75%; /* Advanced */
+    width: 75%;
+    /* Advanced */
 }
 
 .skills-content .right .mongo::before {
-    width: 90%; /* Expert */
+    width: 90%;
+    /* Expert */
 }
 
 .skills-content .right .react::before {
-    width: 85%; /* Advanced */
+    width: 85%;
+    /* Advanced */
 }
 
 .skills-content .right .express::before {
-    width: 55%; /* Intermediate */
+    width: 55%;
+    /* Intermediate */
 }
 
 /* Skills Section Styling */
@@ -530,26 +547,34 @@ section .title::after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0; /* Start with 0 width */
+    width: 0;
+    /* Start with 0 width */
     overflow: hidden;
     white-space: nowrap;
-    color: red ;
-    font-size: 25px; /* Increased font size for stars */
-    animation: fillStars 5s ease-in-out forwards; /* Animation */
+    color: red;
+    font-size: 25px;
+    /* Increased font size for stars */
+    animation: fillStars 5s ease-in-out forwards;
+    /* Animation */
 }
 
 #skills .star-empty {
-    color: #ccc; /* Light gray for empty stars */
-    font-size: 25px; /* Increased font size for stars */
+    color: #ccc;
+    /* Light gray for empty stars */
+    font-size: 25px;
+    /* Increased font size for stars */
 }
 
 /* Keyframes for star-filling animation */
 @keyframes fillStars {
     from {
-        width: 0; /* Start with 0 width */
+        width: 0;
+        /* Start with 0 width */
     }
+
     to {
-        width: 100%; /* Fill to full width */
+        width: 100%;
+        /* Fill to full width */
     }
 }
 
@@ -765,7 +790,8 @@ footer span a:hover {
 @media (max-width: 947px) {
     .menu-btn {
         display: block;
-        position: relative; /* Added position for z-index to work */
+        position: relative;
+        /* Added position for z-index to work */
         z-index: 999;
     }
 
@@ -821,11 +847,16 @@ footer span a:hover {
     }
 
     .about .about-content .left img {
-        display: flex; /* Use flexbox layout */
-        justify-content: center; /* Horizontally center content */
-        align-items: center; /* Vertically center content */
-        margin: 0 auto 60px; /* Keeps the spacing you had */
-        text-align: center; /* Center text (if needed) */
+        display: flex;
+        /* Use flexbox layout */
+        justify-content: center;
+        /* Horizontally center content */
+        align-items: center;
+        /* Vertically center content */
+        margin: 0 auto 60px;
+        /* Keeps the spacing you had */
+        text-align: center;
+        /* Center text (if needed) */
     }
 
     .about .about-content .right {
@@ -838,26 +869,34 @@ footer span a:hover {
 
     @media (max-width: 768px) {
         .about .about-content {
-            flex-direction: column; /* Stack columns vertically */
-            align-items: center; /* Center align the columns */
-            text-align: center; /* Center align text */
+            flex-direction: column;
+            /* Stack columns vertically */
+            align-items: center;
+            /* Center align the columns */
+            text-align: center;
+            /* Center align text */
         }
-    
+
         .about .about-content .column {
-            width: 100%; /* Full width for both columns */
+            width: 100%;
+            /* Full width for both columns */
         }
-    
+
         .about .about-content .left img {
-            display: block; /* Use block instead of flex for images */
-            margin: 0 auto 60px; /* Center the image and add bottom margin */
+            display: block;
+            /* Use block instead of flex for images */
+            margin: 0 auto 60px;
+            /* Center the image and add bottom margin */
         }
-    
+
         .about .about-content .right {
-            text-align: center; /* Center align text in the right column */
-            padding: 0 20px; /* Add some padding for better spacing */
+            text-align: center;
+            /* Center align text in the right column */
+            padding: 0 20px;
+            /* Add some padding for better spacing */
         }
     }
-    
+
     .services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -961,7 +1000,8 @@ footer span a:hover {
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    margin: 20px 0; /* Add some margin for spacing between items */
+    margin: 20px 0;
+    /* Add some margin for spacing between items */
 }
 
 .project-image {
@@ -1019,14 +1059,16 @@ footer span a:hover {
 @media (max-width: 947px) {
     .project-container {
         width: 90%;
-        margin: 20px auto; /* Center the container */
+        margin: 20px auto;
+        /* Center the container */
     }
 }
 
 @media (max-width: 600px) {
     .project-container {
         width: 100%;
-        margin: 20px 0; /* Add some margin for spacing */
+        margin: 20px 0;
+        /* Add some margin for spacing */
     }
 }
 
@@ -1078,7 +1120,7 @@ footer span a:hover {
     color: #fff;
 }
 
-    /* General Styles */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -1087,7 +1129,8 @@ body {
 #chatIcon {
     width: 70px;
     height: 70px;
-    background: rgb(246, 43, 84); /* Crimson background */
+    background: rgb(246, 43, 84);
+    /* Crimson background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1126,7 +1169,8 @@ body {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     border: 2px solid crimson;
     position: fixed;
-    bottom: 100px; /* Adjusted to align with the chat icon */
+    bottom: 100px;
+    /* Adjusted to align with the chat icon */
     left: 20px;
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s linear 0.4s;
@@ -1145,13 +1189,16 @@ body {
 #chatbot::before {
     content: "";
     position: absolute;
-    left: 18px; /* Adjusted to align with the chat icon */
-    bottom: -18px; /* Positioned below the chatbot box */
+    left: 18px;
+    /* Adjusted to align with the chat icon */
+    bottom: -18px;
+    /* Positioned below the chatbot box */
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 18px solid crimson; /* Crimson tail */
+    border-top: 18px solid crimson;
+    /* Crimson tail */
 }
 
 /* Chatbot Header */
@@ -1161,24 +1208,29 @@ body {
     align-items: center;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(11, 11, 11); /* White text */
-    background: crimson; /* Crimson background */
+    color: rgb(11, 11, 11);
+    /* White text */
+    background: crimson;
+    /* Crimson background */
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    margin: -15px -15px 10px -15px; /* Align with chatbot box */
+    margin: -15px -15px 10px -15px;
+    /* Align with chatbot box */
 }
 
 .chatbot-header button {
     background: none;
     border: none;
-    color: white; /* White close button */
+    color: white;
+    /* White close button */
     font-size: 24px;
     cursor: pointer;
     padding: 0;
 }
 
 .chatbot-header button:hover {
-    color: #ffcccc; /* Light crimson on hover */
+    color: #ffcccc;
+    /* Light crimson on hover */
 }
 
 /* Chat Messages */
@@ -1223,7 +1275,8 @@ body {
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
     border: 1px solid crimson;
-    color: rgb(9, 9, 9); /* White text */
+    color: rgb(9, 9, 9);
+    /* White text */
     text-align: center;
 }
 
@@ -1237,12 +1290,12 @@ body {
 @media (max-width: 600px) {
     #chatbot {
         width: 90%;
-        left: 10px; /* Adjusted for mobile */
+        left: 10px;
+        /* Adjusted for mobile */
     }
 
     #chatbot::before {
-        left: 10px; /* Adjusted tail position for mobile */
+        left: 10px;
+        /* Adjusted tail position for mobile */
     }
 }
-
-
