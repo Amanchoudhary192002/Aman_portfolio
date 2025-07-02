@@ -58,7 +58,7 @@ $(document).ready(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed(".typing3", {
-        strings: ["Cloud (AWS, Azure & GCP )", "Technical Support", "Web Development"],
+        strings: ["Cloud (AWS, Azure & GCP )", "Web Development"],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed(".typing2", {
-        strings: ["Cloud (AWS, Azure & GCP )", "Technical Support", "Web Development"],
+        strings: ["Cloud (AWS, Azure & GCP )","Web Development"],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true
