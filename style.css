@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,7 +18,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #c4aaaa;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -414,7 +415,7 @@ section .title::after {
 }
 
 .skills .skills-content .right .bars {
-    margin-bottom: 15px;
+    margin-bottom: 100px;
 }
 
 .skills .skills-content .right .info {
@@ -1298,4 +1299,73 @@ body {
         left: 10px;
         /* Adjusted tail position for mobile */
     }
+}
+
+.skills-section {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #b388ff;
+}
+
+.skills-section .highlight {
+    color: #82b1ff;
+}
+
+.skills-section p {
+    color: #c5c5c5;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.level {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: block;
+}
+
+.legend {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.legend .dot {
+    margin: 0 10px;
 }
